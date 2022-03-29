@@ -1,0 +1,88 @@
+export default function App() {
+  return <Component1 />;
+}
+const arr = [1, 2, 3, 4];
+
+const Component2 = () => {
+  return (
+  );
+};
+
+const Component1 = () => {
+
+  return (
+    <main>
+
+    </main>
+  );
+};
+
+
+    <nav className="navbar">
+      <div className="navbar_head">
+        <LinkedInIcon />
+        <div className="nav_search">
+          <span className="">
+            <SearchIcon />
+          </span>
+          <input placeholder="Search" />
+        </div>
+      </div>
+      <nav className="nav-item">
+        {navItems.map((item) => (
+          <div className="nav-item" key={item}>
+            {item}
+          </div>
+        ))}
+      </nav>
+      <div className="btn-profile">
+        <img src={proflePictures[0]} className="" alt="profile" />
+      </div>
+    </nav>
+
+
+.navbar {
+  display: flex;
+  padding: 16px 40px 16px 40px;
+  background: white;
+}
+.navbar_head {
+  flex-grow: 0.25;
+}
+.navbar_nav {
+  display: flex;
+  justify-content: space-evenly;
+  flex-grow: 2;
+}
+.nav_search {
+  position: relative;
+  display: inline-block;
+  margin-left: 32px;
+}
+.nav_search span {
+  position: absolute;
+  top: 6px;
+  left: 2px;
+  color: gainsboro;
+}
+.nav_search input {
+  border: 0px;
+  border-bottom: 2px gray;
+  padding: 8px 0px 8px 32px;
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+.btn-profile {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 32px;
+  flex-grow: 0.25;
+}
+.btn-profile img {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
